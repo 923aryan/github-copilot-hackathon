@@ -5,7 +5,7 @@ To start the server, follow these steps:
 
 1. **Generate PEM Files**: First, you need to generate the necessary PEM files for secure communication or authentication. Make sure you have the appropriate tools like OpenSSL installed.
 
-3. **Install Dependencies**: Once in the `/src` directory, install the project dependencies with:
+3. **Install Dependencies**: Once in the root directory, install the project dependencies with:
    npm install
 
 

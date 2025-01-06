@@ -1,5 +1,4 @@
-# React + TypeScript + Vite
-# Github Challenge Completion Images
+# Digital Time Capsule - React + TypeScript + Vite
 
 To start the server, follow these steps:
 
@@ -13,6 +12,7 @@ To start the server, follow these steps:
    npm run dev
 
 
+# Github Challenge Completion Images
 Here are the images related to the challenge completion:
 
 ![ph4](https://github.com/user-attachments/assets/92460f89-22a5-4fa1-91e2-b1f24798cd8f)

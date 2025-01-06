@@ -1,0 +1,100 @@
+.animated-border {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+  }
+  
+  .animated-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #ffffff, #27b6ee, #ffffff);
+    border-radius: inherit; /* Ensures the same rounded corners */
+    z-index: -1;
+    background-size: 300% 100%;
+    animation: borderAnimation 2s linear infinite;
+    pointer-events: none; /* Prevents interfering with user actions */
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Login background */
+  .rotating-background {
+    animation: rotateBackground 20s linear infinite;
+  }
+  
+  @keyframes rotateBackground {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating-background {
+    animation: rotateBackground 20s linear infinite;
+  }
+  
+  @keyframes rotateBackground {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Ensure the overlay doesn't affect the rotation */
+  .rotating-background {
+    animation: rotateAndZoom 15s linear infinite;
+  }
+  
+
+  @keyframes rotateAndZoom {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(2);
+    }
+    75% {
+      transform: rotate(270deg) scale(2);
+    }
+
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  /* Ensure the overlay doesn't affect the rotation */
+  .rotating-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1;
+  }
+  
+  /* Ensure the login form stays static */
+  .relative {
+    transform: none;
+  }
